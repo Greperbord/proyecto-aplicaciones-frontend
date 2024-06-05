@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff; /* Fondo azul pastel */
@@ -8,7 +9,7 @@ body {
 }
 
 h1, h2 {
-    color: #005b99; /* Azul más oscuro para los encabezados */
+    color: #000000; /* Azul más oscuro para los encabezados */
 }
 
 h1 {
@@ -31,7 +32,7 @@ h2 {
 }
 
 .car {
-    background-color: #ccf2ff; /* Fondo de tarjeta azul claro */
+    background-color: #ffffff; /* Fondo de tarjeta azul claro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -51,7 +52,7 @@ h2 {
 
 .car h3 {
     margin: 10px 0;
-    color: #004466; /* Azul intermedio */
+    color: #ff0000; /* Azul intermedio */
     font-size: 1.2em;
     text-align: center;
 }
@@ -63,9 +64,9 @@ h2 {
 }
 
 form {
-    background-color: #ccf2ff; /* Fondo del formulario azul claro */
+    background-color: #e7e7e7; /* Fondo del formulario azul claro */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(53, 52, 52, 0.1);
     display: inline-block;
     padding: 20px;
     text-align: left;
@@ -84,7 +85,7 @@ th, td {
 }
 
 th {
-    color: #004466; /* Azul intermedio */
+    color: #000000; /* Azul intermedio */
     font-weight: bold;
 }
 
@@ -97,7 +98,7 @@ td select, td input {
 }
 
 button {
-    background-color: #005b99; /* Azul más oscuro */
+    background-color: #3b73ec; /* Azul más oscuro */
     border: none;
     border-radius: 5px;
     color: white;
@@ -109,7 +110,7 @@ button {
 }
 
 button:hover {
-    background-color: #004466; /* Azul intermedio */
+    background-color: #505050; /* Azul intermedio */
 }
 
 .logout-button {
@@ -118,7 +119,7 @@ button:hover {
 }
 
 .fa-arrow-left, .fa-arrow-right {
-    color: #005b99; /* Azul más oscuro */
+    color: #3b73ec; /* Azul más oscuro */
     cursor: pointer;
     font-size: 2em;
     margin: 20px;
@@ -126,4 +127,42 @@ button:hover {
 
 .fa-arrow-left:hover, .fa-arrow-right:hover {
     color: #004466; /* Azul intermedio */
+}
+
+/* Estilos para la sección de estado de reserva */
+.status {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.upcoming {
+    background-color: #ffc848; /* Amarillo */
+    color: #ffffff; /* Color de texto oscuro */
+}
+
+.in-process {
+    background-color: #06d6a0; /* Verde */
+    color: #fff; /* Texto blanco */
+}
+
+.finished {
+    background-color: #ef476f; /* Rojo */
+    color: #fff; /* Texto blanco */
+}
+
+.status:empty {
+    background-color: #ffffff; /* Rojo */
+    color: #fff; /* Texto blanco */
+}
+
+.disponible {
+    color: green;
+    font-weight: bold;
+}
+
+.no-disponible {
+    color: red;
+    font-weight: bold;
 }

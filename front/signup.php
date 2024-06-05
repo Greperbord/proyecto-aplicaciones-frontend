@@ -12,13 +12,15 @@
         <form id="formulario-Registro" class="form" action="../back/signup.php" method="POST">
             <h2>Registrarse</h2>
             <input type="hidden" id="id" name="id" class="customerName" value="0">
-            <input type="text" id="nombre" name="nombre" class="customerName" placeholder="Nombre" required>
+            <input type="text" id="nombre" name="nombre" class="customerName" placeholder="Nombre(s)" required>
+            <input type="text" id="apate" name="apate" class="customerName" placeholder="Apellido Paterno" required>
+            <input type="text" id="amate" name="amate" class="customerName" placeholder="Apellido Materno" required>
             <input type="email" id="correo" name="correo" class="customerName" placeholder="Correo electrónico" required>
             <input type="text" id="direccion" name="direccion" class="customerName" placeholder="Dirección" required>
             <input type="text" id="telefono" name="telefono" class="customerName" placeholder="Teléfono" required>
             <input type="password" id="contrasena" name="contrasena" class="customerName" placeholder="Contraseña" required>
             <button type="button" class="btn btnAdd" id="Agregar">Registrarse</button>
-            <p class="message">¿Ya tienes una cuenta? <a href="login.php">Iniciar sesión</a></p>
+            <p class="message">¿Ya tienes una cuenta? <a href="index.php">Iniciar sesión</a></p>
         </form>
     </div>
 </body>
